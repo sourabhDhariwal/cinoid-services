@@ -1,4 +1,4 @@
-let dbObj = require('../DbConnection.js')({});
+let dbObj = require('../DbConnection')({});
 
 
 let contactUS=()=>{
