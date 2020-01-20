@@ -1,7 +1,11 @@
 const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
-  res.status(200).json({ message: 'Connected!' });
-});
+
+let fileUploadFunctionv = (req, res,next)=>{
+
+ res.status(200).json({ message: 'Connected!' });
+}
+
+routes.post('/fileUpload',fileUploadFunctionv)
 
 module.exports = routes;
